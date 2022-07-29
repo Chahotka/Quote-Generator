@@ -1,0 +1,53 @@
+@import "null.scss";
+//////////////////////===============================//////////////////////
+body {
+    color: #fff;
+    background: #000;
+}
+.container {
+    border: 1px solid #fff;
+
+    width: 95%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+}
+.quotes {
+
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    color:#999;
+    background-color: #1b5531;
+    border: 10px solid #1d421f;
+	&__quote {
+        margin: 0 0 20px 0;
+        text-align: center;
+        font-size: 1.5rem;
+	}
+
+	&__author {
+        font-size: 1.5rem;
+	}
+
+	&__button {
+	}
+}
+
+@media(max-width:480px) {
+    .quotes {
+
+        &__quote {
+            font-size: 1rem;
+        }
+    
+        &__author {
+            font-size: 1rem;
+        }
+    }
+}

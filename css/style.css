@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  color: #fff;
+  background: #000;
+}
+
+.container {
+  border: 1px solid #fff;
+  width: 95%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+}
+
+.quotes {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  color: #999;
+  background-color: #1b5531;
+  border: 10px solid #1d421f;
+}
+.quotes__quote {
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.quotes__author {
+  font-size: 1.5rem;
+}
+@media (max-width: 480px) {
+  .quotes__quote {
+    font-size: 1rem;
+  }
+  .quotes__author {
+    font-size: 1rem;
+  }
+}
